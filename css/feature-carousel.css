@@ -1,0 +1,71 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+.carousel-container {
+  position:relative;
+  width:100%;
+  height:370px;
+}
+#carousel {
+  height:370px;
+  width:100%;
+  background-color:#f1f1f1;
+  position:relative;
+
+}
+.carousel-image {
+  display:block;
+  border:1px solid #ffffff;
+  -webkit-box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    4px 5px 4px rgba(0, 0, 0, 0.75);
+box-shadow:         4px 5px 4px rgba(0, 0, 0, 0.75);
+}
+.carousel-feature {
+  position:absolute;
+  top:-1000px;
+  left:-1000px;
+  cursor:pointer;
+}
+
+.tracker-summation-container {
+  position:absolute;
+  color:white;
+  right:48px;
+  top:230px;
+  padding:3px;
+  margin:3px;
+  background-color:#000;
+  display:none;
+}
+
+.tracker-individual-container {
+  position:absolute;
+  color:white;
+  right:235px;
+  bottom:-45px;
+  padding:0;
+  margin:0;
+  display:none!important;
+}
+.tracker-individual-container li {
+  list-style:none;
+}
+.tracker-individual-container .tracker-individual-blip {
+	background:url(../img/slide.png) no-repeat; width:14px; height:14px; text-indent:-9999em; margin:0 3px;
+}
+.tracker-individual-container .tracker-individual-blip-selected {
+	background:url(../img/slide_a.png) no-repeat; width:14px; height:14px; text-indent:-9999em; margin:0 3px;
+}
+
+#carousel-left {
+  position:absolute;
+  bottom:33px;
+  left:220px;
+  cursor:pointer;
+}
+#carousel-right {
+  position:absolute;
+  bottom:33px;
+  right:220px;
+  cursor:pointer;
+}

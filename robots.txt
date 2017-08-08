@@ -1,0 +1,9 @@
+    User-agent: *
+
+    Allow: /media/
+
+    Disallow: /wp-admin/
+
+    Disallow: /wp-includes/
+
+    Sitemap: http://nangcautoanliem/sitemap.xml

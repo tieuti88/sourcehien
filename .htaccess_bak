@@ -1,0 +1,31 @@
+RewriteEngine On
+
+
+RewriteRule ^admin/$ admin/ [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/keyword=(.*)$	index.php?com=$1&keyword=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/keyword=(.*)&p=([0-9]+)$	index.php?com=$1&keyword=$2&p=$3 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$	index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z_-]+).html$	index.php?com=$1&direction=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html/p=([0-9]+)$	index.php?com=$1&p=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/$	index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$	index.php?com=$1&id=$3 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/p=([0-9]+)$	index.php?com=$1&p=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$	index.php?com=$1&idc=$2 [L]
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/p=([0-9]+)$	index.php?lang=$1&com=$2&idc=$3&p=$4 [L]
+
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$	index.php?lang=$1&com=$2&idc=$3&idi=$4 [L]
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/p=([0-9]+)$	index.php?lang=$1&com=$2&idc=$3&idi=$4&p=$5 [L]
+
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$	index.php?lang=$1&com=$2&idc=$3&id=$5 [L]
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$	index.php?lang=$1&com=$2&idc=$3&idi=$4&id=$6 [L]
+
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$	index.php?lang=$1&com=$2&idc=$3&idi=$4&idc1=$6 [L]
+
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/p=([0-9]+)$	index.php?lang=$1&com=$2&idc=$3&idi=$4&idc1=$6&p=$7 [L]
+
+RewriteRule ^([a-zA-Z0-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$	index.php?lang=$1&com=$2&idc=$3&idi=$4&idc1=$6&id=$8 [L]
